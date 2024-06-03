@@ -13,7 +13,7 @@ loan_offers:
   - '101123'
   tags:
   - descriptor:
-      code: general-info
+      code: GENERAL_INFO
       name: General Information
     list:
     - descriptor:
