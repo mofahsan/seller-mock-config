@@ -32,7 +32,7 @@ personal-loan-form1_2_0_0:
                       type: READ
                       input:
                         value: "req_body.message.order.items.0.xinput.form_response.submission_id"
-                  - "form1_submissionid"
+                  - "96814d81-7317-483c-8b87-f3aeb1d92299"
           - operation:
               type: EQUAL
               title: Check search message code

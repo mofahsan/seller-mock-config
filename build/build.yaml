@@ -295,7 +295,7 @@ path:
                             input:
                               value: >-
                                 req_body.message.order.items.0.xinput.form_response.submission_id
-                        - form1_submissionid
+                        - 96814d81-7317-483c-8b87-f3aeb1d92299
                 - operation:
                     type: EQUAL
                     title: Check search message code
@@ -349,7 +349,7 @@ path:
                       id: F01
                     form_response:
                       status: PENDING
-                      submission_id: form1_submissionid
+                      submission_id: 96814d81-7317-483c-8b87-f3aeb1d92299
             dict:
               bpp_uri: https://fis-staging.ondc.org/ondc-seller/
               bpp_id: fis-staging.ondc.org/ondc-seller
@@ -2439,7 +2439,7 @@ path:
           $ref: ''
         delay: 300
         payload:
-          submission_id: form1_submissionid
+          submission_id: 96814d81-7317-483c-8b87-f3aeb1d92299
   form_personal-loan_old_required-loan:
     callbacks:
       default:

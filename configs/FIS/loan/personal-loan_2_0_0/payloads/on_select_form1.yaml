@@ -1,26 +1,26 @@
 context:
-  transaction_id: '{{transaction_id}}'
+  transaction_id: "{{transaction_id}}"
   action: on_select
-  timestamp: '{{timestamp}}'
-  message_id: '{{message_id}}'
+  timestamp: "{{timestamp}}"
+  message_id: "{{message_id}}"
 loan_offers:
   - id: ITEM_ID_1_PERSONAL-LOAN
     descriptor:
       code: PERSONAL_LOAN
       name: Personal Loan
     tags:
-    - descriptor:
-        code: CONSENT_INFO
-        name: Consent Information
-      list:
       - descriptor:
-          code: CONSENT_HANDLER
-          name: Consent Handler
-        value: 50635a60-7d85-441a-85f4-86f734ca4e4c
-      display: false
+          code: CONSENT_INFO
+          name: Consent Information
+        list:
+          - descriptor:
+              code: CONSENT_HANDLER
+              name: Consent Handler
+            value: 50635a60-7d85-441a-85f4-86f734ca4e4c
+        display: false
     xinput:
       form:
         id: F01
       form_response:
         status: PENDING
-        submission_id: form1_submissionid
+        submission_id: 96814d81-7317-483c-8b87-f3aeb1d92299
