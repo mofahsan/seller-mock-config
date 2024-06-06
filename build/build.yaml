@@ -534,7 +534,7 @@ path:
                       multiple_sumbissions: false
                     required: true
               amount_id: LOAN_LEAD_ID_OR_SIMILAR
-              final_amount: 442300
+              final_amount: '442300'
               amount_breakup:
                 - price:
                     currency: INR
