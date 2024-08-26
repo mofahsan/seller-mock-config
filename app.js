@@ -5,7 +5,7 @@ var uiPath = "./build/build.js";
 var yamlOutput = "./build/build.yaml";
 
 
-const indexYamlPath = './configs/mobility/mobility.yaml'
+const indexYamlPath = './configs/index.yaml'
 
 async function baseYMLFile(file) {
     try {
