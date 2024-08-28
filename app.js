@@ -2,6 +2,8 @@ const $RefParser = require("json-schema-ref-parser");
 const yaml = require("js-yaml");
 const fs = require("fs")
 var uiPath = "./build/build.js";
+var uiPathJson = "./build/build.json";
+
 var yamlOutput = "./build/build.yaml";
 
 
@@ -17,8 +19,10 @@ async function baseYMLFile(file) {
   }
 
   baseYMLFile(indexYamlPath).then((res)=>{
+    fs.writeFileSync(uiPathJson, JSON.stringify(res), "utf8");
     const jsonDump = "let build_spec = " + JSON.stringify(res);
     fs.writeFileSync(uiPath, jsonDump, "utf8");
+
 
     const output = yaml.dump(res);
     fs.writeFileSync(yamlOutput, output, "utf8");
