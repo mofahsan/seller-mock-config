@@ -562,6 +562,68 @@ flows:
                     name: Delhi Metro Rail Limited
                     images:
                       - url: https://delhimetrorail.com/logos/logo.ico
+                  items:
+                    - id: I1
+                      category_ids:
+                        - C1
+                      descriptor:
+                        name: Single Journey Ticket
+                        code: SJT
+                      price:
+                        currency: INR
+                        value: '60'
+                      quantity:
+                        maximum:
+                          count: 6
+                        minimum:
+                          count: 1
+                      fulfillment_ids:
+                        - F1
+                      time:
+                        label: Validity
+                        duration: PT2D
+                        timestamp: '2021-03-23T11:01:40.065Z'
+                    - id: I2
+                      category_ids:
+                        - C1
+                      descriptor:
+                        name: Round Journey Ticket
+                        code: RJT
+                      price:
+                        currency: INR
+                        value: '110'
+                      quantity:
+                        maximum:
+                          count: 6
+                        minimum:
+                          count: 1
+                      fulfillment_ids:
+                        - F1
+                      time:
+                        label: Validity
+                        duration: PT2D
+                        timestamp: '2021-03-23T11:01:40.065Z'
+                    - id: I3
+                      category_ids:
+                        - '1'
+                        - '2'
+                      descriptor:
+                        name: Journey Pass
+                        code: Pass
+                      price:
+                        currency: INR
+                        value: '500'
+                      quantity:
+                        maximum:
+                          count: 1
+                        minimum:
+                          count: 1
+                      fulfillment_ids:
+                        - F2
+                      time:
+                        label: Validity
+                        duration: PT2D
+                        timestamp: '2021-03-23T11:01:40.065Z'
                   fulfillments:
                     - id: F1
                       type: ROUTE
